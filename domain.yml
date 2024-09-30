@@ -1,0 +1,999 @@
+version: "3.1"
+
+intents:  
+  - product_info
+  - product_not_found
+  - product_code 
+
+  - vt.bac_giang  
+  - vt.cau_giay 
+  - vt.dong_anh 
+  - vt.ha_dong_1 
+  - vt.ha_dong_2
+  - vt.ha_nam 
+  - vt.dong_da 
+  - vt.hai_ba_trung 
+  - vt.hai_phong 
+  - vt.linh_dam 
+  - vt.long_bien 
+  - vt.quan_3 
+  - vt.quan_7 
+  - vt.tu_son 
+  - vt.thai_nguyen 
+  - vt.thanh_hoa 
+  - vt.vinh 
+  - grt.greet
+  - grt.gioi_thieu 
+  - grt.ho_tro_khac 
+  - grt.contact_cskh 
+  - grt.contact_kdol
+  - grt.contact_ktbh
+  - grt.tong_dai
+  - grt.goodbye 
+  - grt.happy 
+  - grt.iamabot 
+  - kd.tu_van_sp
+  - kd.san_pham_chuot 
+  - kd.san_pham_laptop 
+  - kd.san_pham_ram 
+  - kd.san_pham_o_cung 
+  - kd.san_pham_man_hinh 
+  - kd.san_pham_camera 
+  - kd.san_pham_card 
+  - kd.san_pham_PC 
+  - kd.san_pham_game 
+  - kd.san_pham_tai_nghe 
+  - kd.san_pham_case
+  - kd.san_pham_webcam 
+  - kd.san_pham_wifi 
+  - kd.san_pham_linh_kien 
+  - kd.san_pham_ghe 
+  - kd.san_pham_may_cham_cong 
+  - kd.san_pham_build 
+  - kd.san_pham_ps5 
+  - kd.san_pham_server 
+  - kd.san_pham_may_in 
+  - kd.san_pham_ban_phim 
+  - kd.san_pham_box_o_cung
+  - kd.san_pham_ve_sinh 
+  - kd.phan_mem_windows
+  - kd.phan_mem 
+  - kt.ho_tro_kt
+  - kt.bao_hanh
+  - kt.sua_chua
+  - kt.thong_tin_bao_hanh
+  - kt.ho_tro_ky_thuat
+  - kt.van_de_khac
+  - kt.sc_tt_linh_kien
+  - kt.thu_cu_doi_moi
+  - kt.ho_tro_khac
+  - gh.giao_hang
+  - gh.giao_hang_phi 
+  - gh.giao_hang_xe_khach 
+  - gh.giao_hang_thoi_gian 
+  - gh.giao_hang_tinh 
+  - gh.giao_hang_cod
+  - gh.giao_hang_dia_chi 
+  - dv.dich_vu_kh
+  - dv.hoa_don
+  - dv.thanh_toan
+  - dv.gop_y_khieu_nai
+  - dv.ho_tro_khac
+  
+entities: 
+  - productcode
+
+  - vt.bac_giang
+  - vt.cau_giay
+  - vt.dong_anh
+  - vt.ha_dong_1
+  - vt.ha_dong_2
+  - vt.ha_nam
+  - vt.dong_da
+  - vt.hai_ba_trung
+  - vt.hai_phong
+  - vt.linh_dam
+  - vt.long_bien
+  - vt.quan_3
+  - vt.quan_7
+  - vt.tu_son
+  - vt.thai_nguyen
+  - vt.thanh_hoa
+  - vt.vinh
+  - grt.greet
+  - grt.gioi_thieu
+  - grt.ho_tro_khac
+  - grt.contact_cskh 
+  - grt.contact_ktbh
+  - grt.contact_kdol
+  - grt.tong_dai
+  - grt.goodbye 
+  - grt.happy 
+  - grt.iamabot 
+  - kd.tu_van_sp
+  - kd.san_pham_chuot 
+  - kd.san_pham_laptop 
+  - kd.san_pham_ram 
+  - kd.san_pham_o_cung 
+  - kd.san_pham_man_hinh 
+  - kd.san_pham_camera 
+  - kd.san_pham_card 
+  - kd.san_pham_PC 
+  - kd.san_pham_game 
+  - kd.san_pham_tai_nghe 
+  - kd.san_pham_case
+  - kd.san_pham_webcam 
+  - kd.san_pham_wifi 
+  - kd.san_pham_linh_kien 
+  - kd.san_pham_ghe 
+  - kd.san_pham_may_cham_cong  
+  - kd.san_pham_build 
+  - kd.san_pham_ps5 
+  - kd.san_pham_server 
+  - kd.san_pham_may_in 
+  - kd.san_pham_ban_phim
+  - kd.san_pham_box_o_cung 
+  - kd.san_pham_ve_sinh 
+  - kd.phan_mem_windows 
+  - kd.phan_mem 
+  - kt.ho_tro_kt
+  - kt.bao_hanh
+  - kt.sua_chua
+  - kt.thong_tin_bao_hanh
+  - kt.ho_tro_ky_thuat
+  - kt.van_de_khac
+  - kt.sc_tt_linh_kien
+  - kt.thu_cu_doi_moi
+  - kt.ho_tro_khac
+  - gh.giao_hang
+  - gh.giao_hang_phi 
+  - gh.giao_hang_xe_khach 
+  - gh.giao_hang_thoi_gian 
+  - gh.giao_hang_tinh 
+  - gh.giao_hang_cod
+  - gh.giao_hang_dia_chi 
+  - dv.dich_vu_kh
+  - dv.hoa_don
+  - dv.thanh_toan
+  - dv.gop_y_khieu_nai
+  - dv.ho_tro_khac
+
+actions:
+  - action_extract_product_code
+  - action_get_product_info
+  - action_resources_list
+
+slots:
+
+  grt.greet:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.greet
+
+  grt.gioi_thieu:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.gioi_thieu
+
+  grt.ho_tro_khac: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.ho_tro_khac
+  
+  grt.contact_cskh: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.contact_cskh
+  
+  grt.contact_kdol:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.contact_kdol
+  
+  grt.contact_ktbh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.contact_ktbh
+
+  grt.tong_dai:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.tong_dai
+  
+  grt.goodbye:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.goodbye
+  
+  grt.happy:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.happy
+  
+  grt.iamabot:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: grt.iambot
+  
+  kd.tu_van_sp:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.tu_van_sp
+  
+  kd.san_pham_chuot:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_chuot 
+
+  kd.san_pham_laptop:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_laptop 
+
+  kd.san_pham_ram:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_ram 
+
+  kd.san_pham_o_cung: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_o_cung 
+
+  kd.san_pham_man_hinh: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_man_hinh 
+
+  kd.san_pham_camera: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_camera 
+
+  kd.san_pham_card: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_card
+
+  kd.san_pham_PC: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_PC 
+
+  kd.san_pham_game: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_game 
+
+  kd.san_pham_tai_nghe:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_tai_nghe 
+
+  kd.san_pham_case:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_case
+
+  kd.san_pham_webcam: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_webcam 
+
+  kd.san_pham_wifi: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_wifi 
+        
+  kd.san_pham_linh_kien: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_linh_kien 
+
+  kd.san_pham_ghe: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_ghe 
+
+  kd.san_pham_may_cham_cong:  
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_may_cham_cong  
+
+  kd.san_pham_build: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_build 
+
+  kd.san_pham_ps5: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_ps5 
+
+  kd.san_pham_server: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_server 
+
+  kd.san_pham_may_in:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_may_in 
+
+  kd.san_pham_ban_phim:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_ban_phim 
+
+  kd.san_pham_box_o_cung: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_box_o_cung
+
+  kd.san_pham_ve_sinh: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.san_pham_ve_sinh 
+
+  kd.phan_mem_windows: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.phan_mem_windows
+
+  kd.phan_mem:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kd.phan_mem
+
+  kt.ho_tro_kt:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.ho_tro_kt
+  
+  kt.bao_hanh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.bao_hanh
+  
+  kt.sua_chua:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.sua_chua
+  
+  kt.thong_tin_bao_hanh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.thong_tin_bao_hanh
+  
+  kt.ho_tro_ky_thuat:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.ho_tro_ky_thuat
+  
+  kt.van_de_khac:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.van_de_khac
+  
+  kt.sc_tt_linh_kien:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.sc_tt_linh_kien
+  
+  kt.thu_cu_doi_moi:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.thu_cu_doi_moi
+  
+  kt.ho_tro_khac:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: kt.ho_tro_khac
+  
+  gh.giao_hang:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang
+
+  gh.giao_hang_phi:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang_phi     
+
+  gh.giao_hang_xe_khach:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang_xe_khach
+
+  gh.giao_hang_tinh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.giao_hang_tinh 
+
+  gh.giao_hang_cod:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang_cod
+
+  gh.giao_hang_thoi_gian:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang_thoi_gian
+
+  gh.giao_hang_dia_chi:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: gh.giao_hang_dia_chi
+
+  dv.dich_vu_kh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.dich_vu_kh
+  
+  dv.hoa_don:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.hoa_don
+  
+  dv.thanh_toan:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.thanh_toan
+
+  dv.gop_y_khieu_nai:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.gop_y_khieu_nai
+  
+  dv.ho_tro_khac:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dv.ho_tro_khac
+
+# Không chỉnh sửa
+  productcode:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: productcode
+
+  product_id:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_id
+    
+  product_sku:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_sku
+
+  product_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_name
+    
+  product_price:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_price
+
+  product_brand:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_brand
+
+  product_url:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: product_url
+
+  market_price:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: market_price
+
+  warranty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: warranty
+    
+  shipping:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: shipping
+    
+  description:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: description
+
+# Update 4/11/2023 
+  vt.bac_giang:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.bac_giang
+
+  vt.cau_giay:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.cau_giay
+
+  vt.dong_anh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.dong_anh
+
+  vt.ha_dong_1:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.ha_dong_1
+  
+  vt.ha_dong_2:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.ha_dong_2
+  
+  vt.ha_nam:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.ha_nam
+
+  vt.dong_da:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.dong_da  
+
+  vt.hai_ba_trung:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.hai_ba_trung
+        
+  vt.hai_phong:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.hai_phong
+        
+  vt.linh_dam:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.linh_dam
+        
+  vt.long_bien:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.long_bien
+        
+  vt.quan_3:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.quan_3
+        
+  vt.quan_7:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.quan_7
+        
+  vt.tu_son:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.tu_son
+        
+  vt.thai_nguyen:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.thai_nguyen
+        
+  vt.thanh_hoa:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.thanh_hoa
+        
+  vt.vinh:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: vt.vinh
+  
+
+responses:
+
+  utter_grt.goodbye:
+    - text: 'Cảm ơn quý khách đã quan tâm và sử dụng dịch vụ bên HACOM. Chúc quý khách luôn mạnh khỏe và thành công!'
+    - text: 'Tạm biệt bạn!'
+    - text: 'Bye!'
+  
+  utter_grt.iamabot:
+    - text: "Tôi là 1 con Bot"
+
+  utter_grt.happy:
+    - text: "Tuyệt vời"
+
+  utter_grt.greet:
+    - text: "Xin chào bạn, tôi là trợ lý ảo của Hacom, tôi có thể giúp gì cho bạn!"
+      buttons: 
+      - title: "Tư vấn sản phẩm"
+        payload: "/kd.tu_van_sp"
+      - title: "Hỗ trợ kỹ thuật"
+        payload: "/kt.ho_tro_kt"
+      - title: "Giao hàng"
+        payload: "/gh.giao_hang"
+      - title: "Dịch vụ khách hàng"
+        payload: "/dv.dich_vu_kh"
+
+  utter_grt.ho_tro_khac:
+    - text: "Bạn đợi mình một chút, sẽ có nhân viên tư vấn liên lạc với bạn trong thời gian sớm nhất"
+
+  utter_grt.gioi_thieu:
+    - text: "Công ty Cổ phần Đầu tư Công nghệ HACOM (viết tắt là “HACOM”, tiền thân là Công ty Cổ phần Máy Tính Hà Nội - HANOICOMPUTER), được thành lập vào tháng 9/2001, hoạt động chủ yếu trong lĩnh vực bán lẻ các sản phẩm máy tính và thiết bị văn phòng. Trải qua chặng đường hơn 20 năm phát triển, đến nay HACOM đã trở thành một trong những thương hiệu hàng đầu trong lĩnh vực kinh doanh các sản phẩm Công nghệ thông tin tại Việt Nam với hệ thống các showroom quy mô và hiện đại trải dài từ Bắc vào Nam. Nhiều tổ chức uy tín liên tục đánh giá cao HACOM với nhiều giải thưởng danh giá: Top 50 Nhãn hiệu nổi tiếng Việt Nam do Hội Sở hữu Trí tuệ Việt Nam công nhận và trao tặng; Top 500 Doanh nghiệp tăng trưởng nhanh nhất Việt Nam 2021 và 2022 (FAST500), top 500 Doanh nghiệp lớn nhất Việt Nam 2021 (VNR500) do Vietnam Report công nhận và trao tặng, top 50 Thương hiệu Uy tín Hàng đầu Châu Á 2022 do Trung tâm Nghiên cứu Phát triển Doanh nghiệp Châu Á phối hợp với tổ chức Giám sát Chất lượng Quốc tế xét chọn. Với khẩu hiệu “Uy tín tạo dựng niềm tin”, HACOM mong muốn xây dựng “niềm tin” của Khách hàng bằng chất lượng dịch vụ tốt nhất, vượt trội nhất. Đó cũng chính là kim chỉ nam cho sự phát triển bền vững mà HACOM hướng đến."
+
+  utter_grt.tong_dai:
+    - text: "19001903\n
+            Bấm phím 1: Khách hàng Doanh nghiệp (8h-24h)\n
+            Bấm phím 2: Khách hàng Cá nhân (8h-24h)\n
+            Bấm phím 3: Hỗ trợ Kỹ thuật (8h-21h)\n
+            Bấm phím 4: Hỗ trợ Bảo hành (8h-17h30)\n
+            Bấm phím 0: Chăm sóc Khách hàng (8h-19h)"
+
+  utter_grt.contact_cskh:
+    - text: 'Quý khách vui lòng chờ chút để tôi chuyển thông tin cho bộ phận chăm sóc khách hàng tư vấn cho mình.'
+    - text: 'Nếu hiện tại đang quá giờ hành chính thì quý khách vui lòng chờ đến sáng mai CSKH sẽ liên hệ lại.'
+  
+  utter_grt.contact_kdol:
+    - text: 'Quý khách vui lòng chờ chút để tôi chuyển thông tin cho nhân viên kinh doanh tư vấn cho mình.'
+  
+  utter_grt.contact_ktbh:
+    - text: 'Quý khách vui lòng chờ chút để tôi chuyển thông tin cho nhân viên kỹ thuật tư vấn cho mình.'
+
+  utter_kd.tu_van_sp:
+    - text: "Vui lòng cho Hacom biết sản phẩm bạn đang quan tâm là gì ạ?"
+
+  utter_kd.san_pham_chuot:
+    - text: "Đây là danh sách {kd.san_pham_chuot} bên mình đang quan tâm: https://hacom.vn/chuot-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_laptop:
+    - text: "Đây là danh sách {kd.san_pham_laptop} bên mình đang quan tâm: https://hacom.vn/laptop. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_ram:
+    - text: "Đây là danh sách {kd.san_pham_ram} bên mình đang quan tâm: https://hacom.vn/ram-bo-nho-trong.\n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
+  utter_kd.san_pham_o_cung:
+    - text: "Đây là danh sách {kd.san_pham_o_cung} bên mình đang quan tâm: https://hacom.vn/o-cung-ssd.\n 
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_man_hinh:
+    - text: "Đây là danh sách {kd.san_pham_man_hinh} bên mình đang quan tâm: https://hacom.vn/man-hinh-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_camera:
+    - text: "Đây là danh sách {kd.san_pham_camera} bên mình đang quan tâm: https://hacom.vn/camera-thiet-bi-an-ninh \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_card:
+    - text: "Đây là danh sách {kd.san_pham_card} bên mình đang quan tâm: https://hacom.vn/vga-card-man-hinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_PC:
+    - text: "Đây là danh sách {kd.san_pham_PC} bên mình đang quan tâm: https://hacom.vn/may-tinh-de-ban. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_game:
+    - text: "Đây là danh sách {kd.san_pham_game} bên mình đang quan tâm: https://hacom.vn/may-choi-game-tay-game. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
+  utter_kd.san_pham_tai_nghe:
+    - text: "Đây là danh sách {kd.san_pham_tai_nghe} bên mình đang quan tâm: https://hacom.vn/tai-nghe. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_case:
+    - text: "Đây là danh sách {kd.san_pham_case} bên mình đang quan tâm: https://hacom.vn/vo-case. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_webcam:
+    - text: "Đây là danh sách {kd.san_pham_webcam} bên mình đang quan tâm: https://hacom.vn/webcam. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_wifi:
+    - text: "Đây là danh sách {kd.san_pham_wifi} bên mình đang quan tâm: https://hacom.vn/thiet-bi-mang. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_linh_kien:
+    - text: "Đây là danh sách {kd.san_pham_linh_kien} bên mình đang quan tâm: https://hacom.vn/linh-kien-may-tinh. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+  
+  utter_kd.san_pham_ghe:
+    - text: "Đây là danh sách {kd.san_pham_ghe} bên mình đang quan tâm: https://hacom.vn/ghe-gaming-ghe-choi-game. \n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_may_cham_cong:
+    - text: "Đây là danh sách {kd.san_pham_may_cham_cong} bên mình đang quan tâm: https://hacom.vn/may-cham-cong.\n
+            Bạn vui lòng cung cấp mã sản phẩm bạn đang quan tâm để mình tư vấn thêm cho bạn."
+
+  utter_kd.san_pham_build:
+    - text: "Bạn build PC ngân sách mong muốn khoảng bao nhiêu ạ, chỉ case thôi hay cả màn hình bàn phím chuột."
+
+  utter_kd.san_pham_ps5:
+    - text: "Các dòng máy chơi game {kd.san_pham_ps5}: https://hacom.vn/may-choi-game-ps5"
+  
+  utter_kd.san_pham_server:
+    - text: "Các dòng {kd.san_pham_server}: https://hacom.vn/may-chu-hang"
+
+  utter_kd.san_pham_may_in:
+    - text: "Bạn cần {kd.san_pham_may_in} đơn năng hay đa năng, máy in màu hay đen trắng ?"
+    - text: "Các sản phẩm {kd.sanphasan_pham_may_inmmayin} đa năng:  https://hacom.vn/may-in?chuc-nang-may-in=da-chuc-nang&other_filter=in-stock&sort=price-asc."
+
+  utter_kd.san_pham_ban_phim:
+    - text: "Bạn tham khảo sản phẩm {kd.san_pham_ban_phim}: https://hacom.vn/ban-phim-may-tinh?sort=price-asc&other_filter=in-stock."
+
+  utter_kd.san_pham_box_o_cung:
+    - text: "Danh sách sản phẩm {kd.san_pham_box_o_cung}: https://hacom.vn/hdd-box." 
+  
+  utter_kd.san_pham_ve_sinh:
+    - text: "Các dòng thiết bị vệ sinh: https://hacom.vn/thiet-bi-ve-sinh."
+
+  utter_kd.phan_mem_windows:
+    - text: 'Bên mình hỗ trợ cài Windows bản quyền cho cá nhân và doanh nghiệp: https://hacom.vn/he-dieu-hanh'
+  
+  utter_kd.phan_mem:
+    - text: 'Bên mình có hỗ trợ cài đặt hệ điều hành Windows, bộ công cụ Office 365 và các phần mềm Antivirus bản quyền. Chi tiết xem tại: https://hacom.vn/phan-mem-ban-quyen'
+
+  utter_kt.ho_tro_kt:
+    - text: "Bạn vui lòng cho Hacom biết bạn đang cần hỗ trợ gì ạ?"
+      buttons:
+      - title: "Kỹ thuật bảo hành"
+        payload: "/kt.bao_hanh"
+      - title: "Dịch vụ sửa chữa"
+        payload: "/kt.sua_chua"
+
+  utter_kt.bao_hanh:
+    - text: "Bạn cần hỗ trợ gì về kỹ thuật bảo hành ạ?"
+      buttons:
+      - title: "Kiểm tra thông tin bảo hành"
+        payload: "/kt.thong_tin_bao_hanh"
+      - title: "Hỗ trợ kỹ thuật"
+        payload: "/kt.ho_tro_ky_thuat"
+      - title: "Vấn đề khác"
+        payload: "/kt.van_de_khac"
+
+  utter_kt.sua_chua:
+    - text: "Quý khách cần Hacom hỗ trợ gì về dịch vụ sửa chữa ạ?"
+      buttons:
+      - title: "Sửa chữa/thay thế linh kiện"
+        payload: "kt.sc_tt_linh_kien"
+      - title: "Thu cũ - Đổi mới"
+        payload: "/kt.thu_cu_doi_moi"
+      - title: "Hỗ trợ khác"
+        payload: "/kt.ho_tro_khac"
+
+  utter_kt.thong_tin_bao_hanh:
+    - text: 'Bạn vui lòng truy cập https://hacom.vn/chinh-sach-bao-hanh để biết thêm thông tin về chính sách cũng như điều kiện {kt.thong_tin_bao_hanh}'
+    - text: 'HACOM chỉ nhận {kt.thong_tin_bao_hanh} các sản phẩm chưa qua sửa chữa, các hỏng hóc do quá trình sử dụng sẽ không được bảo hành, thông tin chi tiết xem tại: https://hacom.vn/chinh-sach-bao-hanh'
+    - text: 'Bạn vui lòng cung cấp mã serial number và thông tin của sản phẩm để bên mình hỗ trợ tra cứu'
+    - text: "Bên mình yêu cầu khách giữ đầy đủ giấy tờ vỏ hộp phụ kiện đi kèm và không được làm móp méo hay xước sản phẩm. Sau 15 ngày thì bảo hành theo sản phẩm."
+
+  utter_kt.ho_tro_ky_thuat:
+    - text: "Bạn cho mình xin thông tin họ tên, số điện thoại, sản phẩm đang dùng để em báo kỹ thuật hỗ trợ."
+    - text: "Bạn vui lòng chờ một lát, thông tin của bạn đã được gửi cho bộ phận kỹ thuật hỗ trợ."
+  
+  utter_kt.van_de_khac:
+    - text: "Bạn vui lòng chờ trong giây lát, mình sẽ liên hệ bộ phận kỹ thuật để hỗ trợ bạn."
+
+  utter_kt.sc_tt_linh_kien: 
+    - text: "linh kiện"
+
+  utter_kt.thu_cu_doi_moi:
+    - text: "Cảm ơn bạn đã tin dùng sản phẩm. Xin hãy cho HACOM biết lý do bạn muốn {kt.thu_cu_doi_moi} sản phẩm ạ?"
+    - text: "Xin vui lòng để lại họ tên & số điện thoại liên hệ của bạn, nhân viên HACOM sẽ hỗ trợ mình trong thời gian sớm nhất ạ. "
+    - text: "Bạn đã nắm rõ về chính sách/quy định về việc {kt.thu_cu_doi_moi} sản phẩm của HACOM chưa? Xin vui lòng tham khảo thông tin tại đường dẫn: https://hacom.vn/hacom-chinh-sach-nhap-lai-tinh-phi và https://hacom.vn/hacom-chinh-sach-bao-hanh nhé."
+    
+  utter_kt.ho_tro_khac:
+    - text: 'Với các hỗ trợ kĩ thuật khác, bạn vui lòng đợi trong giây lát trong khi mình liên hệ với bộ phận kỹ thuật'
+
+  utter_gh.giao_hang:
+    - text: Bên mình giao hàng miễn phí trong ngày phạm vi nội thành Hà Nội, TP.HCM
+    - text: Bên mình hỗ trợ giao hàng toàn quốc, thời gian từ 1 -3 ngày tùy địa điểm, vui lòng để lại địa chỉ để mình đưa ra thông tin chính xác hơn
+    - text: 'HACOM cung cấp dịch vụ giao hàng miễn phí trong 100km quanh khu vực Hà Nội và TP.HCM'
+
+  utter_gh.giao_hang_dia_chi:
+    - text: 'Bạn vui lòng cung cấp địa chỉ giao hàng và giờ giao hàng nhé!'
+
+  utter_gh.giao_hang_thoi_gian:
+    - text: "Bên mình giao trong vòng 2-4 tiếng nội thành. \n
+    Nếu bạn ở tỉnh sẽ mất 3-5 ngày có hàng"
+  
+  utter_gh.giao_hang_phi:
+    - text: "Tùy vào vị trí mà Hacom sẽ tính ship cho bạn !"
+
+  utter_gh.giao_hang_xe_khach:
+    - text: "Hacom có nhận hàng gửi {gh.giao_hang_xe_khach}. Bạn chuyển khoản trước tiền hàng bên mình nhận được tiền sẽ gửi hàng theo xe khách về cho bạn"
+
+  utter_gh.giao_hang_tinh:
+    - text: "Bên mình có gửi {gh.giao_hang_tinh} ạ, bạn chuyển khoản trước sẽ được miễn phí cước gửi. Nếu bạn nhận hàng mới thanh toán sẽ phát sinh thêm phí gửi."
+
+  utter_gh.giao_hang_cod:
+    - text: "Hacom có hỗ trợ gửi {gh.giao_hang_cod}. Khi nhận hàng bạn thanh toán tiền sản phẩm + phí vận chuyển + phí thu hộ."
+
+  utter_dv.dich_vu_kh:
+    - text: "Không biết quý khách đang quan tâm đến dịch vụ nào của Hacom ạ?"
+      buttons:
+      - title: "Hóa đơn"
+        payload: "/dv.hoa_don"
+      - title: "Thanh toán"
+        payload: "/dv.thanh_toan"
+      - title: "Góp ý/Khiếu nại"
+        payload: "/dv.gop_y_khieu_nai"
+      - title: "Hỗ trợ khác"
+        payload: "/dv.ho_tro_khac"
+
+  utter_dv.hoa_don:
+    - text: 'Quý khách vui lòng cung cấp thông tin như sau :
+        1. Họ và tên
+        2. Địa chỉ
+        3. Số điện thoại di động
+        4. Thông tin viết VAT cho công ty (nếu có) + Email nhận hóa đơn điện tử'
+
+  utter_dv.thanh_toan:
+    - text: "Bạn có thể [dv.thanh_toan]qua các tài khoản trong link dưới này, sau khi chuyển xong bạn gửi mình xin thông tin hình ảnh thanh toán để mình báo kế toán kiểm tra lại : https://hacom.vn/hacom-huong-dan-thanh-toan"
+
+  utter_dv.gop_y_khieu_nai:
+    - text: "Xin bạn vui lòng chia sẻ chi tiết vấn đề mình đang gặp phải để HACOM thuận tiện kiểm tra & hỗ trợ"
+    - text: "Mọi thông tin cần hỗ trợ, bạn vui lòng liên hệ tới số Hotline 19001903 nhấn phím 0 để gặp nhân viên Chăm sóc Khách hàng. Thời gian phục vụ từ 08 giờ đến 19 giờ hàng ngày. Email: dichvukhachhang@hacom.vn. HACOM trân trọng cảm ơn."
+
+  utter_dv.ho_tro_khac:
+    - text: "Bạn đợi chút để mình liên hệ với bộ phận chăm sóc khách hàng để hỗ trợ ạ."
+
+  utter_product_info:
+    - text: "Thông tin sản phẩm:\n 
+            ID: {product_id}\n
+            Mã sản phẩm: {product_sku}\n
+            Link sản phẩm: https://hacom.vn/{product_url}\n
+            Tên sản phẩm: {product_name}\n
+            Thương hiệu: {product_brand}\n
+            Giá sản phẩm: {product_price}\n
+            Giá thị trường: {market_price}\n
+            Bảo hành: {warranty}\n
+            Vận chuyển: {shipping}\n
+            {description}"
+
+# Update 4/11/2023 
+
+  utter_vt.bac_giang:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.bac_giang}: Số 135 Hùng Vương - Hoàng Văn Thụ - Bắc Giang"
+
+  utter_vt.cau_giay:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.cau_giay} : Số 79 Nguyễn Văn Huyên - Cầu Giấy - Hà Nội"
+
+  utter_vt.dong_anh:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.dong_anh}: Số 77 Cao Lỗ - Đông Anh - Hà Nội"
+  
+  utter_vt.ha_dong_1:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.ha_dong_1}: Số 511 Quang Trung - Hà Đông - Hà Nội"
+  
+  utter_vt.ha_dong_2:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.ha_dong_2}: Số 57 Trần Phú - Hà Đông - Hà Nội"
+
+  utter_vt.ha_nam:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.ha_nam}: Số 145B Trường Chinh - Phủ Lý - Hà Nam"
+
+  utter_vt.dong_da:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.dong_da}: Số 43 Thái Hà, Trung Liệt, Đống Đa, Hà Nội"
+
+  utter_vt.hai_ba_trung:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.hai_ba_trung}: Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội"
+  
+  utter_vt.hai_phong:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.hai_phong}: Số 406 Tô Hiệu - Lê Chân - Hải Phòng"
+
+  utter_vt.linh_dam:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.linh_dam}: CT4A Bắc Linh Đàm - Hoàng Mai - Hà Nội"
+
+  utter_vt.long_bien:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.long_bien}: Số 398 Nguyễn Văn Cừ - Long Biên - Hà Nội"
+  
+  utter_vt.quan_3:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.quan_3}: Số 520 Cách Mạng Tháng Tám - Quận 3 - TP. Hồ Chí Minh"
+
+  utter_vt.quan_7:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.quan_7}: Số 500 Nguyễn Thị Thập - Quận 7 - TP. Hồ Chí Minh"
+
+  utter_vt.tu_son:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.tu_son}: Số 299 Minh Khai - Từ Sơn - Bắc Ninh"
+
+  utter_vt.thai_nguyen:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.thai_nguyen}: Số 118 Lương Ngọc Quyến - Quang Trung - Thái Nguyên"
+
+  utter_vt.thanh_hoa:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.thanh_hoa}: Số 6 Trần Phú - Điện Biên - Thanh Hóa"
+
+  utter_vt.vinh:
+    - text: "Đây là địa chỉ chi nhánh HACOM - {vt.vinh}: Số 156 Nguyễn Sỹ Sách - Thành Phố Vinh - Nghệ An"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
